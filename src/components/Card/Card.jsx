@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <>
       <div className="card">
-        <h1>service title</h1>
+  <h1>{props.name}</h1>
         <ul className="list">
           <li className="collection-item">
             component: healthy or not result here
