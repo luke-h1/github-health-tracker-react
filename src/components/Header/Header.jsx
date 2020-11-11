@@ -8,7 +8,7 @@ const Header = ({ title }) => {
     <>
       <header className="header">
         <h2 className="header-title">
-          <Link to="/" className='header-link'>
+          <Link to="/" className="header-link">
             {title} <FaGithub className="header-icon" />{' '}
           </Link>
         </h2>

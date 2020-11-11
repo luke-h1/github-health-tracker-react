@@ -5,7 +5,7 @@ import './About.scss';
 const About = () => {
   return (
     <>
-    <Header /> 
+      <Header />
       <div className="about-container">
         <h1>About This App</h1>
         <p>

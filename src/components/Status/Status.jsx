@@ -33,7 +33,7 @@ const Status = () => {
 
   return (
     <>
-    {loading && <Loading />}
+      {loading && <Loading />}
       <div className="status-wrapper">{data ? data : null}</div>
     </>
   );
