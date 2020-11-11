@@ -11,6 +11,9 @@
   h1 {
     margin-bottom: 1rem;
   }
+  h3 {
+    margin: 1rem;
+  }
 }
 
 .status-wrapper {
@@ -18,14 +21,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-}
-
-.list {
-  margin: 0;
-}
-
-.collection-item {
-  list-style-type: none;
 }
 
 /* media queries */

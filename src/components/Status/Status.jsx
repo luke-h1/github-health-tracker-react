@@ -12,22 +12,23 @@ const Status = () => {
   const fetchGhData = async () => {
     const API_URL = `https://kctbh9vrtdwd.statuspage.io/api/v2/components.json`;
     const res = await axios.get(API_URL);
-    console.log(res)
-    console.log(res.data.components); 
+    console.log(res);
+    console.log(res.data.components);
     const results = res.data.components.map((stat) => (
-      <Card 
+      <Card
         component={stat.component}
         name={stat.name}
         status={stat.status}
-      /> 
-    )); 
+        key={stat.id}
+        description={stat.description}
+        updatedAt={stat.updated_at}
+      />
+    ));
     setData(results);
-    } 
-    return (
+  };
+  return (
     <>
-      <div className="status-wrapper">
-        {data ? data : null}
-      </div>
+      <div className="status-wrapper">{data ? data : null}</div>
     </>
   );
 };
