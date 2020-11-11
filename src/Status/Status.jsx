@@ -1,64 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Status.scss';
-
+import Card from '../Card/Card';
 const Status = () => {
   return (
     <>
       <div className="status-wrapper">
-        <div className="card">
-          <h1>service title</h1>
-          <ul className="list">
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-          </ul>
-          {/* results go here */}
-        </div>
-        <div className="card">
-          <h1>service title</h1>
-          <ul className="list">
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-          </ul>
-          {/* results go here */}
-        </div>
-        <div className="card">
-          <h1>service title</h1>
-          <ul className="list">
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-            <li className="collection-item">
-              component: healthy or not result here
-            </li>
-          </ul>
-          {/* results go here */}
-        </div>
+        <Card /> 
+        <Card /> 
+        <Card /> 
+        <Card /> 
       </div>
     </>
   );
