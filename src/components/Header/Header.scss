@@ -1,0 +1,19 @@
+.header {
+  padding: 20px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+}
+
+.header-title {
+  margin-bottom: 10px;
+}
+
+.header-link {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: rgb(14, 107, 212);
+    cursor: pointer;
+  }
+}
