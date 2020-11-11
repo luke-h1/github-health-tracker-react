@@ -5,10 +5,10 @@ const Status = () => {
   return (
     <>
       <div className="status-wrapper">
-        <Card /> 
-        <Card /> 
-        <Card /> 
-        <Card /> 
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </>
   );
