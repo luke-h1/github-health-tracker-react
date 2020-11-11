@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import './Status.scss';
 import axios from 'axios';
+import Loading from '../Loading/Loading';
+
 import Card from '../Card/Card';
 const Status = () => {
   const [data, setData] = useState([]);
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     fetchGhData();
   }, []);
 
   const fetchGhData = async () => {
+    setLoading(true);
     const API_URL = `https://kctbh9vrtdwd.statuspage.io/api/v2/components.json`;
     const res = await axios.get(API_URL);
     console.log(res);
@@ -25,9 +28,12 @@ const Status = () => {
       />
     ));
     setData(results);
+    setLoading(false);
   };
+
   return (
     <>
+    {loading && <Loading />}
       <div className="status-wrapper">{data ? data : null}</div>
     </>
   );
